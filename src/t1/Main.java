@@ -3,9 +3,10 @@ package t1;
 import java.util.Scanner;
 
 public class Main {
-            Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
+    //Вывод "yes"/"no" для четного/нечетного числа
     public static void main(String[] args) {
-        int b = 0;
-        System.out.println(b);
+        int n = scanner.nextInt();
+        System.out.println(n % 2 == 0 ? "Yes" : "No");
     }
 }
